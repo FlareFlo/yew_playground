@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
 #[function_component]
-fn app() -> Html {
+fn App() -> Html {
     let state = use_state(|| 0);
 
     let incr_counter = {
@@ -24,5 +24,5 @@ fn app() -> Html {
 }
 
 fn main() {
-    yew::Renderer::<app>::new().render();
+    yew::Renderer::<App>::new().render();
 }
